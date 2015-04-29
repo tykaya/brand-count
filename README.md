@@ -10,9 +10,9 @@ Cluster Yapısı:
 Kafka üzerine Node.js kurulup producer.js run edilmeli.
 Spark Spark Streaming içeren versiyonu ile birlikte kurulmuş olmalı. 
 
-1) Kolay olması icin brandsstat.scala dosyası aşağıdaki path a koyulmalı: 
+1) Kolay olması icin brand_counter.scala dosyası aşağıdaki path a koyulmalı: 
 
-spark/examples/scala-2.10/src/main/scala/org/apache/spark/examples/streaming/brandsstat.scala
+spark/examples/scala-2.10/src/main/scala/org/apache/spark/examples/streaming/brand_counter.scala
 
 2) Ardından aşağıdaki komut ile compile edilip örneklerin bulunduğu jar dosyasına eklenmeli.
 
