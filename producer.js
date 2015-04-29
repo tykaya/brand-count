@@ -5,7 +5,7 @@ client = new kafka.Client('localhost:2181'),
 producer = new Producer(client);
 var brand = ['Arcelik','Vestel','Ariston','Samsung','Altus','Regal','Electrolux','Ugur','Sharp','Philips'];
 producer.on('ready', function () {
-async.parallel([generate(0,250),generate(250,500),generate(500,750),generate(750,1000)],
+async.parallel([generate(0,2500),generate(2500,5000),generate(5000,7500),generate(7500,10000)],
         function(err, result){});
 function generate(p,r){
         while(p<r){
