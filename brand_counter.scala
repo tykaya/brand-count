@@ -16,7 +16,7 @@ def main(args: Array[String]) {
 //Bu parametrelerin verilip verilmediğini aşağıdaki IF
 //kontrol eder. Eğer geçerli parametreler verilmedi ise hata mesajı ile programdan çıkar.
         if (args.length < 4) {
-                System.err.println("Usage: KafkaWordCount <zkQuorum> <group> <topics> <numThreads>")
+                System.err.println("Usage: brandsstat <zkQuorum> <group> <topics> <numThreads>")
                 System.exit(1)
                 }
         StreamingExamples.setStreamingLogLevels()
