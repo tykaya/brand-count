@@ -49,7 +49,7 @@ conf değişkeninin üzerine gerekli konfigürasyon parametreleri atanır.
 */
         val topicMap = topics.split(",").map((_,numThreads.toInt)).toMap
 // lines değişkenine her bir kayıt ı alıyoruz.
-        val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap).map(_._2).map(x => (x, 1)).reduceByKey(_ + _).saveToCassandra("brands", "brands_sta$
+        val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap).map(_._2).map(x => (x, 1)).reduceByKey(_ + _).saveToCassandra("brands", "brands_stats")
 //      lines.print()
         ssc.start()
         ssc.awaitTermination()
